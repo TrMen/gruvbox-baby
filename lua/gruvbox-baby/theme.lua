@@ -16,6 +16,7 @@ function M.setup(config)
   theme.defer = {}
   theme.term = c.term
   theme.base = {
+
     NormalFloat = { fg = c.foreground, bg = c.background_dark },
     Normal = { fg = c.foreground, bg = c.background },
     Comment = { fg = c.comment, style = config.comment_style },
@@ -54,8 +55,8 @@ function M.setup(config)
     Conceal = { fg = c.comment },
     Directory = { fg = c.dark_gray },
 
-    TabLine = { bg = c.dark, fg = c.comment }, -- tab pages line, not active tab page label
-    TabLineFill = { bg = c.background }, -- tab pages line, where there are no labels
+    TabLine = { bg = c.dark, fg = c.comment },                  -- tab pages line, not active tab page label
+    TabLineFill = { bg = c.background },                        -- tab pages line, where there are no labels
     TabLineSel = { fg = c.foreground, bg = c.background_dark }, -- tab pages line, active tab page label
 
     DiffAdd = { bg = c.diff.add },
@@ -152,12 +153,12 @@ function M.setup(config)
     ["@text.title"] = { fg = c.soft_yellow },
     ["@text.literal"] = { fg = c.soft_yellow },
     ["@markup"] = { fg = c.soft_yellow },
-    ["@markup.strong"] = { fg = c.soft_yellow, style = "bold" },
+    ["@markup.strong"] = { fg = c.gray, style = "bold" },
     ["@markup.emphasis"] = { fg = c.soft_yellow, style = "italic" },
     ["@markup.underline"] = { fg = c.soft_yellow, style = "underline" },
     ["@markup.strike"] = { fg = c.medium_gray, style = "strikethrough" },
-    ["@markup.heading"] = { fg = c.soft_yellow },
-    ["@markup.raw"] = { fg = c.soft_yellow },
+    ["@markup.heading"] = { fg = c.soft_yellow, style = "bold" },
+    ["@markup.raw"] = { fg = c.cyan },
     ["@uri"] = { fg = c.soft_yellow },
     ["@tag"] = { fg = c.clean_green },
     ["@tag.delimiter"] = { fg = c.comment },
@@ -187,6 +188,7 @@ function M.setup(config)
     ["@lsp.type.type"] = { fg = c.clean_green },
     ["@lsp.type.typeParameter"] = { fg = c.clean_green },
     ["@lsp.type.variable"] = { fg = c.light_blue },
+    ["@markup.quote.markdown"] = { fg = c.comment, style = "italic" },
 
     htmlArg = { fg = c.soft_yellow },
     htmlBold = { fg = c.bright_yellow, style = "bold" },
@@ -222,7 +224,7 @@ function M.setup(config)
     markdownId = { fg = c.magenta },
     markdownIdDeclaration = { fg = c.blue_gray },
     markdownIdDelimiter = { fg = c.magenta },
-    markdownItalic = { fg = c.magenta, style = "italic" },
+    markdownItalic = { fg = c.gray, style = "italic" },
     markdownLinkDelimiter = { fg = c.magenta },
     markdownLinkText = { fg = c.blue_gray },
     markdownListMarker = { fg = c.orange },
@@ -325,7 +327,7 @@ function M.setup(config)
 
     -- mix
     GitSignsCurrentLineBlame = { fg = c.medium_gray },
-    Underlined = { fg = c.error_red, style = "underline" },
+    Underlined = { fg = c.light_blue, style = "underline" },
     ["@variable.cpp"] = { fg = c.foreground },
 
     -- Nvim Tree
