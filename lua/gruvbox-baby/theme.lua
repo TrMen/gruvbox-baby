@@ -228,6 +228,19 @@ function M.setup(config)
     ["NavicIconsTypeParameter"] = { fg = c.light_blue, bg = c.slightly_off_background },
     ["NavicSeparator"] = { fg = c.light_blue, bg = c.slightly_off_background },
 
+    ["DapUIType"] = { link = "@type" },
+    ["DapUIVariable"] = { link = "@variable" },
+    ["DapUIValue"] = { fg = c.magenta },
+    ["DapUILineNumber"] = { fg = c.medium_gray },
+    ["DapUIBreakpointsPath"] = { fg = c.nice_blue },
+    ["DapUIScope"] = { fg = c.nice_blue },
+    ["DapUIDecoration"] = { fg = c.nice_blue },
+    ["DapUIStoppedThread"] = { fg = c.nice_blue },
+    ["DapUIModifiedValue"] = { fg = c.red },
+    ["DapUIFrameName"] = { link = "@function" },
+    ["DapUICurrentFrameName"] = { fg = c.soft_yellow, style = "bold" },
+    ["DapUISource"] = { fg = c.medium_gray },
+    ["DapUIBreakpointsInfo"] = { fg = c.forest_green },
 
 
     htmlArg = { fg = c.soft_yellow },
