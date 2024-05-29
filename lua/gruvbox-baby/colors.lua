@@ -7,6 +7,7 @@ local the_palette = {
   dark = "#202020",
   foreground = "#ebdbb2",
   background = "#282828",
+  slightly_off_background = "#292929",
   background_dark = "#1d2021",
   background_light = "#32302f",
   medium_gray = "#504945",
