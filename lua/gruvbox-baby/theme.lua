@@ -51,7 +51,7 @@ function M.setup(config)
     Error = { fg = c.red, style = "bold" },
     Todo = { fg = c.magenta, style = "bold" },
     CursorLineNr = { fg = c.comment, style = "bold" },
-    debugPc = { bg = c.error_red },
+    debugPc = { bg = c.medium_gray },
     Conceal = { fg = c.comment },
     Directory = { fg = c.dark_gray },
 
