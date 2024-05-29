@@ -93,7 +93,7 @@ function M.setup(config)
     EndOfBuffer = { fg = c.background },
 
     -- Tree Sitter
-    ["@boolean"] = { fg = c.orange },
+    ["@boolean"] = { link = "@number" },
     ["@define"] = { fg = c.red },
     ["@keyword.directive"] = { fg = c.red },
     ["@comment"] = { fg = c.comment, style = config.comment_style },
@@ -115,8 +115,8 @@ function M.setup(config)
     ["@function.call"] = { fg = c.soft_yellow, style = config.function_style },
     ["@function.builtin"] = { fg = c.soft_yellow, style = config.function_style },
     ["@func.macro"] = { fg = c.soft_yellow },
-    ["@parameter"] = { fg = c.blue_gray, style = "nocombine" },
-    ["@variable.parameter"] = { fg = c.nice_blue, style = "nocombine" },
+    ["@parameter"] = { fg = c.nice_blue, style = "nocombine" },
+    ["@variable.parameter"] = { link = "@parameter" },
     ["@parameter.reference"] = { fg = c.dark_gray },
     ["@method"] = { fg = c.soft_yellow, style = config.function_style },
     ["@function.method"] = { fg = c.soft_yellow, style = config.function_style },
@@ -165,7 +165,7 @@ function M.setup(config)
     ["@tag.attribute"] = { fg = c.soft_yellow },
     --
     -- per language TreeSitter
-    ["@variable.python"] = { fg = c.foreground, style = "NONE" },
+    ["@variable.python"] = { link = "@variable" },
     ["@attribute.python"] = { fg = c.orange, style = "bold" },
     ["@decorator"] = { fg = c.orange, style = "bold" },
     ["@variable.rust"] = { link = "@variable" },
@@ -182,12 +182,12 @@ function M.setup(config)
     ["@lsp.type.macro"] = { link = "Macro" },
     ["@lsp.type.method"] = { fg = c.soft_yellow, style = config.function_style },
     ["@lsp.type.namespace"] = { link = "@namespace" },
-    ["@lsp.type.parameter"] = { fg = c.nice_blue },
-    ["@lsp.type.property"] = { fg = c.blue_gray },
+    ["@lsp.type.parameter"] = { link = "@parameter" },
+    ["@lsp.type.property"] = { link = "@property" },
     ["@lsp.type.struct"] = { fg = c.clean_green },
     ["@lsp.type.type"] = { fg = c.clean_green },
     ["@lsp.type.typeParameter"] = { fg = c.clean_green },
-    ["@lsp.type.variable"] = { fg = c.light_blue },
+    ["@lsp.type.variable"] = { link = "@variable" },
     ["@markup.quote.markdown"] = { fg = c.comment, style = "italic" },
 
 
@@ -336,7 +336,7 @@ function M.setup(config)
     -- mix
     GitSignsCurrentLineBlame = { fg = c.medium_gray },
     Underlined = { fg = c.light_blue, style = "underline" },
-    ["@variable.cpp"] = { fg = c.foreground },
+    ["@variable.cpp"] = { link = "@variable" },
 
     -- Nvim Tree
     NvimTreeNormal = { fg = c.foreground, bg = c.background_dark },
