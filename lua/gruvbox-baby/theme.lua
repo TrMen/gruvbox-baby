@@ -158,7 +158,7 @@ function M.setup(config)
     ["@markup.underline"] = { fg = c.soft_yellow, style = "underline" },
     ["@markup.strike"] = { fg = c.medium_gray, style = "strikethrough" },
     ["@markup.heading"] = { fg = c.soft_yellow, style = "bold" },
-    ["@markup.raw"] = { fg = c.cyan },
+    ["@markup.raw"] = { link = "MarkdownCode" },
     ["@uri"] = { fg = c.soft_yellow },
     ["@tag"] = { fg = c.clean_green },
     ["@tag.delimiter"] = { fg = c.comment },
@@ -263,7 +263,7 @@ function M.setup(config)
 
     markdownBlockquote = { fg = c.comment },
     markdownBold = { fg = c.bright_yellow, style = "bold" },
-    markdownCode = { fg = c.soft_yellow },
+    markdownCode = { fg = c.cyan },
     markdownCodeBlock = { fg = c.comment },
     markdownCodeDelimiter = { fg = c.comment },
     markdownH1 = { fg = c.foreground },
