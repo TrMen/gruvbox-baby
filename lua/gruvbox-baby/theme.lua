@@ -165,8 +165,9 @@ function M.setup(config)
     ["@tag.attribute"] = { fg = c.soft_yellow },
     --
     -- per language TreeSitter
+    ["@attribute"] = { fg = c.magenta },
+    ["@attribute.builtin"] = { fg = c.magenta },
     ["@variable.python"] = { link = "@variable" },
-    ["@attribute.python"] = { fg = c.orange, style = "bold" },
     ["@decorator"] = { fg = c.orange, style = "bold" },
     ["@variable.rust"] = { link = "@variable" },
     ["@conditional.javascript"] = { fg = c.red },
@@ -194,7 +195,6 @@ function M.setup(config)
     ["@lsp.mod.deduced"] = { link = "@type" },
     ["@lsp.typemod.variable.readonly"] = { link = "@variable" },
     ["@type.builtin"] = { link = "@type" },
-    ["@attribute.rust"] = { fg = c.magenta },
     ["@function.macro.rust"] = { link = "Macro" },
     ["@lsp.mod.constructorOrDestructor.cpp"] = { link = "@function" },
 
