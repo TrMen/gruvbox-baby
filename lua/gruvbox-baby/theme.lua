@@ -196,6 +196,7 @@ function M.setup(config)
     ["@type.builtin"] = { link = "@type" },
     ["@attribute.rust"] = { fg = c.magenta },
     ["@function.macro.rust"] = { link = "Macro" },
+    ["@lsp.mod.constructorOrDestructor.cpp"] = { link = "@function" },
 
     ["WinBar"] = { bg = c.slightly_off_background },
 
