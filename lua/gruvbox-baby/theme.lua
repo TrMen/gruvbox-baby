@@ -194,7 +194,7 @@ function M.setup(config)
 
     ["@lsp.mod.deduced"] = { link = "@type" },
     ["@lsp.typemod.variable.readonly"] = { link = "@variable" },
-    ["@type.builtin"] = { link = "@type" },
+    ["@type.builtin"] = {},
     ["@function.macro.rust"] = { link = "Macro" },
     ["@lsp.mod.constructorOrDestructor.cpp"] = { link = "@function" },
 
