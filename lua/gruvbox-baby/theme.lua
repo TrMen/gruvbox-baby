@@ -194,9 +194,11 @@ function M.setup(config)
 
     ["@lsp.mod.deduced"] = { link = "@type" },
     ["@lsp.typemod.variable.readonly"] = { link = "@variable" },
-    ["@type.builtin"] = {},
+    ["@type.builtin"] = { link = "@type" },
+    ["@type.builtin.python"] = {}, -- Python parsers incorrectly highlight `type` even when used as a field or variable
     ["@function.macro.rust"] = { link = "Macro" },
     ["@lsp.mod.constructorOrDestructor.cpp"] = { link = "@function" },
+    ["@lsp.type.modifier.cpp"] = {},
 
     ["WinBar"] = { bg = c.slightly_off_background },
 
